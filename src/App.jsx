@@ -1,5 +1,5 @@
 import { Header } from './components/Header/Header';
-import { Post } from './Post';
+import { Post } from './components/Post/Post';
  
 import styles from './App.module.css';
 
@@ -14,15 +14,10 @@ function App() {
 
       <div className={styles.wrapper}>
           <Sidebar/> 
+
           <main>
-            <Post 
-              author="Einon Moraes"
-              content="O einon é muito legal"
-            />
-            <Post 
-              author="Maikinho"
-              content="Pão de queijo"
-            />
+            <Post/>
+            <Post/>
           </main>
       </div>
     </div>
